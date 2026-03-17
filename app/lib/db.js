@@ -2,7 +2,7 @@ import mongoose from "mongoose";
 
 let isConnected = false;
 
-async function dbConnect() {
+const dbConnect = async() =>  {
     if(isConnected) {
         console.log('Mongodb is already connected');
         return;
